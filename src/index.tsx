@@ -1,10 +1,14 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
+import { unstable_createRoot as createRoot } from 'react-dom';
+import App from './components/App';
+import { RecoilRoot } from 'recoil';
 
-ReactDOM.render(
+const rootEl = document.getElementById('root') as HTMLElement;
+
+createRoot(rootEl).render(
 	<React.StrictMode>
-		<App />
+		<RecoilRoot>
+			<App />
+		</RecoilRoot>
 	</React.StrictMode>,
-	document.getElementById('root'),
 );

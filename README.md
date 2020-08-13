@@ -7,7 +7,7 @@ This project is a small thing to get me started with working with few cool techn
 - GraphQL (by running a GraphQL json server)
 - Recoil
 - React Suspense
-- Typescript in react
+- Typescript in react (which took ages to get working. Apparently node modules in `server/` were the problem?)
 - Custom hooks
 
 ## Instructions
